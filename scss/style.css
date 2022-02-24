@@ -1,0 +1,360 @@
+nav {
+  width: 100%;
+  transition: 1.25s;
+  background-color: #cbe2a8;
+  text-align: right;
+  overflow: hidden;
+  margin: 0;
+}
+nav #name {
+  float: left;
+  margin: 12.5px 45px;
+  font-size: 1.75em;
+  color: #379683;
+  letter-spacing: 3px;
+}
+@media screen and (max-width: 1270px) {
+  nav #nav-ul {
+    padding-left: 200px;
+    margin: 0;
+    font-size: 16px;
+  }
+  nav .nav-ul {
+    display: none;
+    width: 100%;
+  }
+  nav .nav-ul.show {
+    display: flex;
+    flex-wrap: wrap;
+    transition: all 0.8s;
+  }
+}
+nav #nav-ul {
+  list-style-type: none;
+  transition: 1.25s;
+  margin: 0;
+}
+nav #nav-ul li {
+  display: inline-block;
+  padding: 17px 15px 15px 15px;
+}
+nav #nav-ul li a {
+  transition: all 0.25s;
+  position: relative;
+  text-decoration: none;
+  color: #379683;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+nav #nav-ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0;
+  content: ".";
+  color: transparent;
+  background: #379683;
+  height: 1px;
+  transition: all 0.25s;
+}
+nav #nav-ul li a:hover {
+  color: #379683;
+  transition: all 0.25s;
+}
+nav #nav-ul li a:hover:after {
+  width: 100%;
+}
+@media screen and (min-width: 1270px) {
+  nav #hamburger {
+    display: none;
+  }
+}
+nav #hamburger {
+  background: transparent;
+  color: #379683;
+  border: 0;
+  cursor: pointer;
+  padding: 20px 15px;
+}
+nav #hamburger:focus {
+  outline: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  transform: translate(0, 0);
+  transition: all 0.5s ease;
+}
+
+.upper {
+  transform: translate(0, -150px);
+  transition: all 0.4s ease;
+}
+
+#header {
+  background: url(images/entrace-image.jpg) no-repeat center center fixed;
+  background-color: #EDF5E1;
+  color: black;
+  text-align: center;
+  padding: 0;
+  /* Firefox < 16 */
+  /* Safari, Chrome and Opera > 12.1 */
+  /* Internet Explorer */
+}
+#header img {
+  opacity: 0.6;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+#header .centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  color: black;
+  transform: translate(-50%, -50%);
+  font-size: 2.5em;
+  -webkit-animation: fadein 5s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 5s;
+  /* Firefox < 16 */
+  -o-animation: fadein 5s;
+  /* Opera < 12.1 */
+  animation: fadein 5s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#about {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  font-size: 1.15em;
+}
+#about .wrapper {
+  padding-left: 13%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: row;
+}
+#about .wrapper .right {
+  width: 35%;
+  text-align: center;
+  padding-right: 5%;
+}
+#about .wrapper .right img {
+  border-radius: 25%;
+}
+#about .wrapper .left {
+  width: 65%;
+  padding-right: 10%;
+}
+
+#experience {
+  background-color: #cbe2a8;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  font-size: 1.15em;
+}
+#experience .wrapper {
+  padding-left: 13%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#experience .wrapper h2 {
+  margin: 0;
+}
+#experience .wrapper .col1, #experience .wrapper .col2, #experience .wrapper .col3 {
+  width: 33%;
+  padding-right: 15%;
+}
+#experience .wrapper .exp2 {
+  padding-top: 30px;
+}
+#experience .wrapper .eventTitle {
+  font-size: 1.15em;
+  font-weight: bold;
+}
+#experience .wrapper ul {
+  padding: 0;
+  margin-top: 10px;
+}
+#experience .wrapper ul li:first-child {
+  margin-top: 10px;
+}
+#experience .wrapper ul li {
+  margin-left: 25px;
+}
+
+#schoolwork {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  font-size: 1.15em;
+}
+#schoolwork .wrapper {
+  padding-left: 13%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#schoolwork .wrapper .projects {
+  padding-right: 25%;
+}
+#schoolwork .wrapper .projects .eventTitle {
+  font-size: 1.15em;
+  font-weight: bold;
+}
+#schoolwork .wrapper .projects a {
+  color: #379683;
+}
+#schoolwork .wrapper .projects a:hover {
+  text-decoration: none;
+}
+#schoolwork .wrapper .projects a:visited {
+  color: #379683;
+}
+
+#projects {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  background-color: #cbe2a8;
+  font-size: 1.15em;
+}
+#projects .wrapper {
+  padding-left: 13%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#projects .wrapper .projects {
+  padding-right: 25%;
+}
+#projects .wrapper .projects .eventTitle {
+  font-size: 1.15em;
+  font-weight: bold;
+}
+
+#resume {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  font-size: 1.15em;
+}
+#resume .wrapper {
+  padding-left: 13%;
+  padding-right: 5%;
+}
+
+footer {
+  background-color: #cbe2a8;
+  margin: 0;
+  padding-top: 1.25em;
+  padding-bottom: 0.85em;
+}
+footer .wrapper {
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+footer .wrapper ul {
+  margin: 0;
+}
+footer .wrapper ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+footer .wrapper ul li img {
+  padding: 15px;
+}
+footer .wrapper .footer-left {
+  width: 33.3333%;
+}
+footer .wrapper .footer-right {
+  text-align: right;
+  width: 60%;
+  font-size: larger;
+  font-weight: bold;
+}
+footer .wrapper a {
+  color: #379683;
+  text-decoration: none;
+}
+footer .wrapper a:hover {
+  text-decoration: underline;
+}
+footer .wrapper a:visited {
+  color: #379683;
+}
+
+.siteBtn {
+  color: #EDF5E1;
+  background-color: #379683;
+  border: 2px solid #379683;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.25s ease;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.siteBtn:hover {
+  color: #379683;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: #EDF5E1;
+}
+body a {
+  cursor: pointer;
+}
+body .wrapper {
+  margin: 0 auto;
+  max-width: 1450px;
+}
+
+/*# sourceMappingURL=style.css.map */

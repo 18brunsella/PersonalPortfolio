@@ -1,0 +1,23 @@
+#projects {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  background-color: $color1;
+  font-size: 1.15em;
+
+  .wrapper{
+    padding-left: 13%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .projects{
+      padding-right: 25%;
+
+      .eventTitle{
+        font-size: 1.15em;
+        font-weight: bold;
+      }
+    }
+  }
+}

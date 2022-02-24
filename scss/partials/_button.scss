@@ -1,0 +1,18 @@
+.siteBtn {
+  color: $backgroundColor;
+  background-color: $color2;
+  border: 2px solid $color2;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.25s ease;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.siteBtn:hover{
+  color: $color2;
+  background-color: transparent;
+  border-color: transparent;
+}
+

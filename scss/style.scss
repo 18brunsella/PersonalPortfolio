@@ -1,0 +1,29 @@
+@import "modules/colors";
+@import "partials/navbar";
+@import "partials/header";
+@import "partials/about";
+@import "partials/experience";
+@import "partials/schoolwork";
+@import "partials/personalproj";
+@import "partials/resume";
+@import "partials/footer";
+@import "partials/button";
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: $backgroundColor;
+
+  a{
+    cursor: pointer;
+  }
+
+  .wrapper{
+    margin: 0 auto;
+    max-width: 1450px;
+  }
+}

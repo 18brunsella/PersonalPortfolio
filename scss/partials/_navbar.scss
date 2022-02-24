@@ -1,0 +1,109 @@
+nav{
+  width: 100%;
+  transition: 1.25s;
+  background-color: $color1;
+  text-align: right;
+  overflow: hidden;
+  margin: 0;
+
+  #name {
+    float: left;
+    margin: 12.5px 45px;
+    font-size: 1.75em;
+    color: $color2;
+    letter-spacing: 3px;
+  }
+
+  @media screen and (max-width: 1270px){
+    #nav-ul{
+      padding-left: 200px;
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .nav-ul{
+      display: none;
+      width: 100%;
+    }
+
+    .nav-ul.show {
+      display: flex;
+      flex-wrap: wrap;
+      transition: all 0.8s;
+    }
+  }
+
+  #nav-ul{
+    list-style-type: none;
+    transition: 1.25s;
+    margin: 0;
+
+    li{
+      display: inline-block;
+      padding: 17px 15px 15px 15px;
+
+      a{
+        transition: all .25s;
+        position: relative;
+        text-decoration: none;
+        color: $color2;
+        font-weight: bold;
+        font-size: 1.25em;
+      }
+
+      a:after{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0;
+        content: '.';
+        color: transparent;
+        background: $color2;
+        height: 1px;
+        transition: all .25s;
+      }
+
+      a:hover {
+        color: $color2;
+        transition: all .25s;
+      }
+
+      a:hover:after{
+        width: 100%;
+      }
+    }
+  }
+
+
+  @media screen and (min-width: 1270px){
+    #hamburger{
+      display: none;
+    }
+  }
+
+  #hamburger {
+    background: transparent;
+    color: $color2;
+    border: 0;
+    cursor: pointer;
+    padding: 20px 15px;
+  }
+
+  #hamburger:focus {
+    outline: none;
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  transform: translate(0,0);
+  transition: all 0.5s ease;
+}
+
+.upper {
+  transform: translate(0,-150px);
+  transition: all 0.4s ease;
+}
