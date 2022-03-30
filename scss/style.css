@@ -4,6 +4,7 @@ nav {
   background-color: #cbe2a8;
   text-align: right;
   overflow: hidden;
+  border-bottom: #379683 solid 0.5px;
   margin: 0;
 }
 nav #name {
@@ -12,22 +13,6 @@ nav #name {
   font-size: 1.75em;
   color: #379683;
   letter-spacing: 3px;
-}
-@media screen and (max-width: 1270px) {
-  nav #nav-ul {
-    padding-left: 200px;
-    margin: 0;
-    font-size: 16px;
-  }
-  nav .nav-ul {
-    display: none;
-    width: 100%;
-  }
-  nav .nav-ul.show {
-    display: flex;
-    flex-wrap: wrap;
-    transition: all 0.8s;
-  }
 }
 nav #nav-ul {
   list-style-type: none;
@@ -65,6 +50,24 @@ nav #nav-ul li a:hover {
 }
 nav #nav-ul li a:hover:after {
   width: 100%;
+}
+@media screen and (max-width: 1270px) {
+  nav #nav-ul {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 16px;
+  }
+  nav .nav-ul {
+    display: none;
+    width: 100%;
+  }
+  nav .nav-ul.show {
+    display: flex;
+    flex-wrap: wrap;
+    transition: all 0.8s;
+    align-items: center;
+    justify-content: center;
+  }
 }
 @media screen and (min-width: 1270px) {
   nav #hamburger {
@@ -183,7 +186,6 @@ nav #hamburger:focus {
 }
 
 #experience {
-  background-color: #cbe2a8;
   padding-top: 45px;
   padding-bottom: 45px;
   font-size: 1.15em;
@@ -203,7 +205,7 @@ nav #hamburger:focus {
   padding-right: 15%;
 }
 #experience .wrapper .exp2 {
-  padding-top: 30px;
+  padding-top: 36px;
 }
 #experience .wrapper .eventTitle {
   font-size: 1.15em;
@@ -224,6 +226,7 @@ nav #hamburger:focus {
   padding-top: 45px;
   padding-bottom: 45px;
   font-size: 1.15em;
+  background-color: #cbe2a8;
 }
 #schoolwork .wrapper {
   padding-left: 13%;
@@ -252,7 +255,6 @@ nav #hamburger:focus {
 #projects {
   padding-top: 45px;
   padding-bottom: 45px;
-  background-color: #cbe2a8;
   font-size: 1.15em;
 }
 #projects .wrapper {
@@ -274,6 +276,7 @@ nav #hamburger:focus {
   padding-top: 45px;
   padding-bottom: 45px;
   font-size: 1.15em;
+  background-color: #cbe2a8;
 }
 #resume .wrapper {
   padding-left: 13%;
@@ -281,7 +284,6 @@ nav #hamburger:focus {
 }
 
 footer {
-  background-color: #cbe2a8;
   margin: 0;
   padding-top: 1.25em;
   padding-bottom: 0.85em;
@@ -338,6 +340,22 @@ footer .wrapper a:visited {
   color: #379683;
   background-color: transparent;
   border-color: transparent;
+}
+
+#education {
+  background-color: #cbe2a8;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  font-size: 1.15em;
+}
+#education .wrapper {
+  padding-left: 13%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: row;
+}
+#education .wrapper ul li {
+  margin-left: 50px;
 }
 
 body {

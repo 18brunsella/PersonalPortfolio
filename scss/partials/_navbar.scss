@@ -4,6 +4,7 @@ nav{
   background-color: $color1;
   text-align: right;
   overflow: hidden;
+  border-bottom: #379683 solid 0.5px;
   margin: 0;
 
   #name {
@@ -12,25 +13,6 @@ nav{
     font-size: 1.75em;
     color: $color2;
     letter-spacing: 3px;
-  }
-
-  @media screen and (max-width: 1270px){
-    #nav-ul{
-      padding-left: 200px;
-      margin: 0;
-      font-size: 16px;
-    }
-
-    .nav-ul{
-      display: none;
-      width: 100%;
-    }
-
-    .nav-ul.show {
-      display: flex;
-      flex-wrap: wrap;
-      transition: all 0.8s;
-    }
   }
 
   #nav-ul{
@@ -76,6 +58,26 @@ nav{
     }
   }
 
+  @media screen and (max-width: 1270px){
+    #nav-ul{
+      margin: 0 auto;
+      padding: 0;
+      font-size: 16px;
+    }
+
+    .nav-ul{
+      display: none;
+      width: 100%;
+    }
+
+    .nav-ul.show {
+      display: flex;
+      flex-wrap: wrap;
+      transition: all 0.8s;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 
   @media screen and (min-width: 1270px){
     #hamburger{

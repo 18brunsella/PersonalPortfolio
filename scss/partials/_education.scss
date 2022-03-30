@@ -1,4 +1,5 @@
-#projects {
+#education{
+  background-color: $color1;
   padding-top: 45px;
   padding-bottom: 45px;
   font-size: 1.15em;
@@ -8,14 +9,10 @@
     padding-right: 5%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
 
-    .projects{
-      padding-right: 25%;
-
-      .eventTitle{
-        font-size: 1.15em;
-        font-weight: bold;
+    ul{
+      li{
+        margin-left: 50px;
       }
     }
   }
